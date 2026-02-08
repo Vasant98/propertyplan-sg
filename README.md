@@ -2,7 +2,7 @@
 
 A comprehensive web-based property purchase calculator designed specifically for Singapore's real estate market. Plan your HDB or Condo purchase with detailed financial breakdowns, stamp duty calculations, and mortgage payment tracking.
 
-![PropertyPlan SG Screenshot](screenshot.png)
+![PropertyPlan SG Screenshot](screenshots/overview.png)
 
 ## 🌟 Features
 
