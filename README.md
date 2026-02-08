@@ -57,7 +57,7 @@ A comprehensive web-based property purchase calculator designed specifically for
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://yourusername.github.io/propertyplan-sg)
+[View Live Demo](https://vasant98.github.io/propertyplan-sg/)
 
 ## 💻 Technologies Used
 
