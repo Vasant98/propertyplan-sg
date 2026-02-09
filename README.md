@@ -201,9 +201,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-Vasant98 - [LinkedIn](https://www.linkedin.com/in/vasanttan/)
+Vasant Tan - [LinkedIn](https://www.linkedin.com/in/vasanttan/)
 
-Project Link: [https://github.com/Vasant98/propertyplan-sg](https://github.com/Vasant98/propertyplan-sg)
+Project Link: [https://github.com/Vasant98/propertyplan-sg](https://github.com/vasanttan/propertyplan-sg)
 
 ## 🙏 Acknowledgments
 
