@@ -183,6 +183,7 @@
             max-height: 400px;
             overflow-y: auto;
             margin-top: 20px;
+            padding-bottom: 60px;  /* Space for the month selector */
         }
 
         .payment-schedule table {
@@ -525,7 +526,6 @@
         }
 
         .saved-scenarios {
-            margin-top: 20px;
             padding: 20px;
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             border-radius: 12px;
@@ -1543,14 +1543,12 @@
             </div>
 
             <!-- Saved Scenarios Section -->
-            <div class="card full-width">
-                <div class="saved-scenarios" id="savedScenariosPanel">
-                    <h3>📁 Saved Scenarios</h3>
-                    <div id="savedScenariosList">
-                        <div class="empty-state" style="padding: 20px;">
-                            <div class="empty-state-icon">💾</div>
-                            <p style="color: #999; font-size: 0.9em;">No saved scenarios yet. Click "Save Scenario" to start comparing properties!</p>
-                        </div>
+            <div class="card full-width saved-scenarios" id="savedScenariosPanel">
+                <h3>📁 Saved Scenarios</h3>
+                <div id="savedScenariosList">
+                    <div class="empty-state" style="padding: 20px;">
+                        <div class="empty-state-icon">💾</div>
+                        <p style="color: #999; font-size: 0.9em;">No saved scenarios yet. Click "Save Scenario" to start comparing properties!</p>
                     </div>
                 </div>
             </div>
@@ -1564,7 +1562,7 @@
             </div>
 
             <!-- Payment Schedule -->
-            <div class="card full-width">
+            <div class="card full-width" style="position: relative; padding-bottom: 70px;">
                 <h2>Monthly Payment Schedule</h2>
                 <div class="payment-schedule">
                     <table id="scheduleTable">
@@ -1581,16 +1579,20 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="schedule-controls">
+                
+                <!-- Controls at Bottom -->
+                <div style="position: absolute; bottom: 25px; left: 25px; right: 25px; display: flex; justify-content: space-between; align-items: center;">
                     <button class="btn-export" onclick="exportToCSV()">📥 Export to CSV</button>
-                    <div class="display-selector">
-                        <label>Show:</label>
-                        <select id="scheduleDisplay" onchange="calculate()">
-                            <option value="12">12 months</option>
-                            <option value="60">5 years</option>
-                            <option value="120">10 years</option>
-                            <option value="all">All</option>
-                        </select>
+                    <div style="background: rgba(255, 255, 255, 0.95); padding: 8px 12px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #e0e0e0;">
+                        <div class="display-selector">
+                            <label>Show:</label>
+                            <select id="scheduleDisplay" onchange="calculate()">
+                                <option value="12">12 months</option>
+                                <option value="60">5 years</option>
+                                <option value="120">10 years</option>
+                                <option value="all">All</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
